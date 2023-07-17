@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Outfit", ink;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3Fne-02lByNSKK76K-pAD7TejR2-dXhkrQ&usqp=CAU");
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(117, 86, 86, 0.3),
+      rgba(0, 0, 0, 0.6)
+    );
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 5px 5px;
+  }
+  header input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 15px;
+    border: black;
+    outline: black;
+    background-color: rgba(18, 18, 18, 0.4);
+    border-radius: 10px;
+    border-bottom: 5px solid #80e9f9;
+  
+    font-size: 25px;
+    font-weight: 10;
+    transition: 0.2s ease-out;
+    color: #c6ecef;
+  }
+  header input:focus {
+    background-color: rgba(5, 8, 8, 0.8);
+  }
+
+  main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .location .city {
+    color: #0a0707;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .location .date {
+    color: #eeeeee;
+    font-size: 16px;
+  }
+  .current .temp {
+    color: #060b1d9c;
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0;
+    
+  }
+  .current .temp span {
+    font-weight: 200;
+  }
+  .current .weather {
+    color: #1d0ac3;
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 15px;
+    
+  }
+  .current .hi-low {
+    color: #190101;
+    font-size: 24px;
+    font-weight: 500;
+   
+  }
